@@ -4,10 +4,14 @@ export const GetStarted = ({
   title,
   subtitle,
   className,
+  ctaTitle,
+  link,
 }: {
   className?: string;
   title: string;
   subtitle: string;
+  ctaTitle?: string;
+  link?: string;
 }) => {
   return (
     <section
@@ -27,7 +31,9 @@ export const GetStarted = ({
           data-aos="fade-up"
           className="flex flex-col items-center justify-center lg:flex-row"
         >
-          <Button className="pry-btn">Get Started</Button>
+          <Button link href={link ? link : "#"} className="pry-btn">
+            {ctaTitle ?? "Get Started"}
+          </Button>
         </div>
       </article>
     </section>

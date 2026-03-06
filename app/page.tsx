@@ -8,7 +8,6 @@ import {
   whoFor,
   whyKanselo,
   whyMentors,
-  whyMentorsOnKanselo,
   youGain,
 } from "@/constants";
 import { allImages } from "@/public/images/images";
@@ -17,7 +16,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="py-10">
+    <main className="pt-30 pb-10">
       <section className="to-secondary/60 flex h-[80vh] flex-col justify-between space-y-5 overflow-hidden bg-linear-to-b from-white from-30% to-90% md:min-h-[800px]">
         <div data-aos="fade-down" className="space-y-6">
           <article className="flex flex-col items-center gap-4 px-2 text-center">
@@ -67,9 +66,9 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="container grid grid-cols-1 items-center gap-5 py-10 lg:grid-cols-2">
+      <section className="container grid grid-cols-1 items-center gap-5 overflow-hidden py-10 lg:grid-cols-2">
         <article data-aos="fade-left" className="w-full space-y-4 md:w-10/12">
-          <h3>Guidance shouldn’t be a privilege</h3>
+          <h2>Guidance shouldn’t be a privilege</h2>
           <p>
             Every ambitious idea deserves access to experience.
             <br /> <br />
@@ -85,7 +84,7 @@ export default function Home() {
         </figure>
       </section>
 
-      <section id="how-it-works" className="bg-grey-5 py-16">
+      <section id="how-it-works" className="bg-grey-5 overflow-hidden py-16">
         <article className="container flex flex-col items-center justify-between space-y-10 overflow-hidden">
           <hgroup data-aos="fade-down" className="space-y-5 text-center">
             <h2>How Kanselo Works</h2>
@@ -195,7 +194,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section id="how-it-works" className="bg-grey-5 py-16">
+      <section className="bg-grey-5 overflow-hidden py-16">
         <article className="container flex flex-col items-center justify-between space-y-10 overflow-hidden">
           <hgroup data-aos="fade-down" className="space-y-5 text-center">
             <h2>Why Kanselo</h2>
