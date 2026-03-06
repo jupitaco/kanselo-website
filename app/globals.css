@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 .container {
-  @apply mx-auto w-[97%] lg:w-[95%];
+  @apply mx-auto w-[93%] lg:w-[90%];
 }
 
 :root {
-  font-family: var(--font-sora);
+  font-family: var(--font-manrope);
   line-height: 1.1;
   font-weight: 400;
   font-size: 16px;
@@ -17,7 +17,7 @@
 }
 
 @theme {
-  --font-sora: "Manrope", "san-serif";
+  --font-manrope: "Manrope", "san-serif";
   --color-primary: #0c2a46;
   --color-secondary-25: #efe8e1;
   --color-secondary: #f08e10;
@@ -32,7 +32,7 @@
   --color-grey-400: #757575;
   --color-grey-500: #191919;
   --color-grey-550: #8a8c91;
-  --color-grey-600: #73757c;
+  --color-grey-600: #475569;
   --color-grey-700: #0e0709;
   --color-grey-800: #1e293b;
   --color-grey-900: #090909;
@@ -89,17 +89,29 @@
     @apply text-grey-500 text-sm;
   }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-grey-800 font-bold;
+  }
   h1 {
     @apply text-3xl font-extrabold lg:text-6xl;
   }
+  h2 {
+    @apply text-2xl lg:text-4xl;
+  }
 
-  h2,
   h3 {
-    @apply text-xl font-semibold lg:text-2xl;
+    @apply text-xl lg:text-2xl;
   }
 
   h4 {
-    @apply text-lg font-semibold lg:text-xl;
+    @apply text-lg lg:text-xl;
+  }
+
+  p {
+    @apply text-base;
   }
 }
 

@@ -436,15 +436,16 @@ export const ListIcon = (props: SVGProps<SVGSVGElement>) => (
 
 export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
+    width={48}
+    height={48}
+    viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
+    <rect width={48} height={48} rx={24} fill="#EDEEF1" />
     <path
-      d="M2 22H22"
+      d="M14 34H34"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -452,7 +453,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M15.01 21.99L3.01001 22.01L3 7.06998C3 6.39998 3.34001 5.77995 3.89001 5.40995L7.89001 2.73997C8.56001 2.28997 9.43999 2.28997 10.11 2.73997L14.11 5.40995C14.67 5.77995 15 6.39998 15 7.06998L15.01 21.99Z"
+      d="M27.01 33.99L15.01 34.01L15 19.07C15 18.4 15.34 17.7799 15.89 17.4099L19.89 14.74C20.56 14.29 21.44 14.29 22.11 14.74L26.11 17.4099C26.67 17.7799 27 18.4 27 19.07L27.01 33.99Z"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -460,7 +461,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M19.98 22.01V18"
+      d="M31.98 34.01V30"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -468,7 +469,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M20 12C18.9 12 18 12.9 18 14V16C18 17.1 18.9 18 20 18C21.1 18 22 17.1 22 16V14C22 12.9 21.1 12 20 12Z"
+      d="M32 24C30.9 24 30 24.9 30 26V28C30 29.1 30.9 30 32 30C33.1 30 34 29.1 34 28V26C34 24.9 33.1 24 32 24Z"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -476,7 +477,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M3 14H15"
+      d="M15 26H27"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -484,7 +485,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M9 22V18.25"
+      d="M21 34V30.25"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}
@@ -492,7 +493,7 @@ export const BuildIcon = (props: SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
     />
     <path
-      d="M9 10.5C9.82843 10.5 10.5 9.82843 10.5 9C10.5 8.17157 9.82843 7.5 9 7.5C8.17157 7.5 7.5 8.17157 7.5 9C7.5 9.82843 8.17157 10.5 9 10.5Z"
+      d="M21 22.5C21.8284 22.5 22.5 21.8284 22.5 21C22.5 20.1716 21.8284 19.5 21 19.5C20.1716 19.5 19.5 20.1716 19.5 21C19.5 21.8284 20.1716 22.5 21 22.5Z"
       stroke="#0C2A46"
       strokeWidth={1.5}
       strokeMiterlimit={10}

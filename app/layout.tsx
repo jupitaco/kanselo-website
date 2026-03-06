@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import AOSAnimation from "@/constants/aosInit";
 
-const geistSans = Manrope({
+const manrope = Manrope({
   variable: "--font-manrope-sans",
   subsets: ["latin"],
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>
+      <body className={`${manrope.variable} antialiased`}>
         <AOSAnimation>
           <Navbar />
           {children}

@@ -81,36 +81,36 @@ export const whyKanselo = [
 
 export const homeFaq = [
   {
-    title: "What is Kanselo?",
-    subtext:
+    question: "What is Kanselo?",
+    answer:
       "A digital mentorship and business advisory platform connecting ambitious individuals with experienced mentors.",
   },
   {
-    title: "Who can join?",
-    subtext:
+    question: "Who can join?",
+    answer:
       "Entrepreneurs, professionals, and experienced advisors who want to learn or give back.",
   },
   {
-    title: "Is Kanselo free?",
-    subtext:
+    question: "Is Kanselo free?",
+    answer:
       "Early access details and pricing will be shared with waiting-list members.",
   },
 ];
 
 export const mentorsFaq = [
   {
-    title: "Who can become a mentor?",
-    subtext:
+    question: "Who can become a mentor?",
+    answer:
       "Experienced founders, professionals, and business owners with proven, real-world experience.",
   },
   {
-    title: "Is mentoring paid?",
-    subtext:
+    question: "Is mentoring paid?",
+    answer:
       "Details on compensation and engagement models will be shared with approved mentors.",
   },
   {
-    title: "How much time is required?",
-    subtext: "Mentoring is flexible and structured around your availability.",
+    question: "How much time is required?",
+    answer: "Mentoring is flexible and structured around your availability.",
   },
 ];
 

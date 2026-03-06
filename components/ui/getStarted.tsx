@@ -1,31 +1,35 @@
-import React from "react";
-import { AppStoreIcon, GoogleStoreIcon } from "@/public/svgs/svgs";
+import Button from "./button";
 
-export const GetStarted = () => {
+export const GetStarted = ({
+  title,
+  subtitle,
+  className,
+}: {
+  className?: string;
+  title: string;
+  subtitle: string;
+}) => {
   return (
     <section
-      className={`bg-success-50 container my-10 flex min-h-[383px] flex-col items-center justify-center gap-8 overflow-hidden rounded-2xl px-3 py-10`}
+      className={`${className} my-10 flex min-h-[383px] flex-col items-center justify-center gap-8 overflow-hidden bg-white py-10`}
     >
-      <hgroup
-        data-aos="fade-down"
-        className="mx-auto w-full max-w-xl space-y-5 text-center"
-      >
-        <h3 className="font-black">Download the Geeft App</h3>
+      <article className="container space-y-5">
+        <hgroup
+          data-aos="fade-down"
+          className="mx-auto w-full max-w-xl space-y-3 text-center"
+        >
+          <h3>{title}</h3>
 
-        <h4 className="text-grey-600">
-          Take Geeft with you wherever you go. Enjoy seamless gifting and stay
-          connected with your community on our mobile app. get notified about
-          birthdays, special occasions and new gift ideas.
-        </h4>
-      </hgroup>
+          <p className="text-grey-600">{subtitle}</p>
+        </hgroup>
 
-      <div
-        data-aos="fade-up"
-        className="flex flex-col items-center justify-center lg:flex-row"
-      >
-        <AppStoreIcon />
-        <GoogleStoreIcon />
-      </div>
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center lg:flex-row"
+        >
+          <Button className="pry-btn">Get Started</Button>
+        </div>
+      </article>
     </section>
   );
 };

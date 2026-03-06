@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <header
       // className={`grid h-24 w-full place-items-center`}
-      className={`border-grey-100 sticky top-0 z-50 grid min-h-20 w-full place-items-center border-b ${
+      className={`sticky top-0 z-50 grid min-h-20 w-full place-items-center ${
         isScrolled ? "bg-white/80 backdrop-blur-xs" : "bg-white"
       }`}
     >
