@@ -7,7 +7,7 @@ import forMentors from "./forMentors.png";
 import guidance from "./guidance.png";
 import lookingFor from "./lookingFor.png";
 import whatWeBuild from "./whatWeBuild.png";
-import whatYouGet from "./whatYouGet.png";
+import whatYouGet from "./whatdDoYouGet.png";
 import whoFor from "./whoFor.png";
 import whoThisFor from "./whoThisFor.png";
 import workWithUs from "./workWithUs.png";
