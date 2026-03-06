@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BrandLogo from "../ui/brandLogo";
 import styles from "./navBar.module.css";
 import ResponsiveNavBar from "./responsiveNavBar";

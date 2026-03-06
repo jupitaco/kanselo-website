@@ -3,14 +3,18 @@ export const navRoutes = [
     name: "Home",
     path: "/",
   },
-  {
-    name: "Features",
-    path: "/features",
-  },
 
+  {
+    name: "How it works",
+    path: "#how-it-works",
+  },
   {
     name: "FAQs",
     path: "#faqs",
+  },
+  {
+    name: "Mentor",
+    path: "/mentor",
   },
 ];
 
@@ -19,21 +23,17 @@ export const footerRoutes = [
     name: "Home",
     path: "/",
   },
-  {
-    name: "Features",
-    path: "/features",
-  },
 
+  {
+    name: "How it works",
+    path: "#how-it-works",
+  },
   {
     name: "FAQs",
     path: "#faqs",
   },
   {
-    name: "Privacy Policy",
-    path: "#",
-  },
-  {
-    name: "Terms of Service",
-    path: "#",
+    name: "Mentor",
+    path: "/mentor",
   },
 ];

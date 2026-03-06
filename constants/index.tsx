@@ -1,130 +1,219 @@
 import {
-  ConnectIcon,
-  ExploreIcon,
-  GiftIcon,
-  HeartIcon,
-  SecureIcon,
+  BuildIcon,
+  GlobeIcon,
+  GuidanceIcon,
+  ListIcon,
+  QualityIcon,
+  SearchGlobe,
+  VerifiedIcon,
+  VettedIcon,
 } from "@/public/svgs/svgs";
 
-import review1 from "@/public/images/review1.png";
-import review2 from "@/public/images/review2.png";
-import review3 from "@/public/images/review3.png";
-import features1 from "@/public/images/features1.png";
-import features2 from "@/public/images/features2.png";
-import features3 from "@/public/images/features3.png";
-
-export const featuresList = [
+export const howItWorks = [
   {
-    icon: <ConnectIcon />,
-    title: "Connect & Share",
+    title: "Join the platform",
     subtext:
-      "Build meaningful connections with friends and family. Share updates, photos and moments effortlessly within your private circles. Stay connected and engaged with the people who matter most.",
-    image: features1,
+      "Sign up as a mentee or mentor and tell us about your goals or expertise.",
   },
   {
-    icon: <GiftIcon />,
-    title: "Gift & Delight",
+    title: "Get matched",
     subtext:
-      "Discover the joy of gifting with Geeft. Send thoughtful gifts to your loved ones, celebrate special occasions and express your appreciation with ease. make every moment memorable with personalized gifts.",
-    image: features2,
+      "We connect you with the right people based on industry, experience, and intent.",
   },
   {
-    icon: <ExploreIcon />,
-    title: "Discover & Explore",
+    title: "Learn, decide, grow",
     subtext:
-      "Explore a world of possibilities with Geeft. Discover new interests, connect with like-minded individuals, and expand your social circle. Find inspiration and engage in meaningful conversations.",
-    image: features3,
-  },
-  {
-    icon: <SecureIcon />,
-    title: "Secure & Private",
-    subtext:
-      "Your privacy and security are our top priorities. Geeft ensures a safe and secure environment for all users. Enjoy peace of mind knowing your data is protected and . your interactions are private.",
-  },
-  {
-    icon: <HeartIcon />,
-    title: "Celebrate Together",
-    subtext:
-      "Celebrate birthdays, anniversaries and special moments with your community.",
+      "Get real-world guidance, clarity on next steps, and insights that move you forward.",
   },
 ];
 
-export const keyFeaturesList = [
+export const whoFor = [
+  "Startup founders",
+  "Small business owners",
+  "Career professionals",
+  "Aspiring entrepreneurs",
+  "Creatives and freelancers",
+];
+
+export const youGain = [
+  "Access to verified mentors",
+  "Practical, experience-based advice",
+  "Clear direction for growth",
+  "Support from people who understand the journey",
+];
+
+export const forMentors = [
+  "Experienced founders",
+  "Business owners",
+  "Industry professionals",
+  "Operators and consultants",
+];
+
+export const whyMentors = [
+  "Share real-world experience",
+  "Support the next generation of builders",
+  "Build authority and impact",
+  "Engage with serious, ambitious individuals",
+];
+
+export const whyKanselo = [
   {
-    icon: <ConnectIcon />,
-    title: "Connect & Share",
-    subtext:
-      "Build your social circle, share updates and stay connected with friends and family.",
+    icon: <VerifiedIcon />,
+    title: "Verified mentors",
+    subtext: "We prioritize credibility, experience, and proven track records.",
   },
   {
-    icon: <GiftIcon />,
-    title: "Gift & Delight",
-    subtext:
-      "Discover unique gifts, create wishlists and surprise loved ones with thoughtful presents.",
+    icon: <QualityIcon />,
+    title: "Quality over noise",
+    subtext: "Thoughtful matching over endless searching.",
   },
   {
-    icon: <ExploreIcon />,
-    title: "Discover & Explore",
-    subtext:
-      "Find new connections, communities and curated gift ideas tailored to your interests",
+    icon: <GuidanceIcon />,
+    title: "Practical guidance",
+    subtext: "Less theory. More real-world insight.",
   },
   {
-    icon: <SecureIcon />,
-    title: "Secure & Private",
-    subtext:
-      "Your data is safe with us. WeWe prfioritize your privacy and security at every step.",
+    icon: <GlobeIcon />,
+    title: "Global vision",
+    subtext: "Built for ambitious markets, relevant everywhere.",
   },
 ];
 
-export const reviewData = [
+export const homeFaq = [
   {
-    qoute: `“Geeft has transformed how I connect with
-friends and family. The gifting feature is so
-intuitive and fun”`,
-    name: "Sarah M.",
-    userImg: review1,
+    title: "What is Kanselo?",
+    subtext:
+      "A digital mentorship and business advisory platform connecting ambitious individuals with experienced mentors.",
   },
   {
-    qoute: `“I love the community aspect of Geeft. It’s a great way to stay connected and celebrate special occasions”`,
-    name: "David L.",
-    userImg: review2,
+    title: "Who can join?",
+    subtext:
+      "Entrepreneurs, professionals, and experienced advisors who want to learn or give back.",
   },
   {
-    qoute: `“Geeft makes gifting effortless and meaningful. I can easily find the perfect gift for anyone”`,
-    name: "Kehinde A.",
-    userImg: review3,
+    title: "Is Kanselo free?",
+    subtext:
+      "Early access details and pricing will be shared with waiting-list members.",
   },
 ];
 
-export const faqsData = [
+export const mentorsFaq = [
   {
-    question: "How do I create an account on Geeft?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "Who can become a mentor?",
+    subtext:
+      "Experienced founders, professionals, and business owners with proven, real-world experience.",
   },
   {
-    question: "What kind of gifts can I send?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "Is mentoring paid?",
+    subtext:
+      "Details on compensation and engagement models will be shared with approved mentors.",
   },
   {
-    question: "Is Geeft free to use?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "How much time is required?",
+    subtext: "Mentoring is flexible and structured around your availability.",
+  },
+];
+
+export const howMentoringWorks = [
+  {
+    title: "Apply as a mentor",
+    subtext: "Share your background, expertise, and availability.",
   },
   {
-    question: "How does Geeft protect my privacy?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "Get verified",
+    subtext: "We review experience to maintain quality and trust.",
   },
   {
-    question: "What are the community guudelines?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "Get matched",
+    subtext:
+      "You’re connected with mentees aligned with your industry and strengths.",
   },
   {
-    question: "How do I create an account on Geeft?",
-    answer:
-      "Sit amet. Sem integer vitae justo eget magna fermentum iaculis. Facilisis magna etiam tempor orci eu lobortis.",
+    title: "Mentor with purpose",
+    subtext:
+      "Offer guidance that helps people make better decisions and move forward.",
+  },
+];
+
+export const whyMentorsOnKanselo = [
+  {
+    icon: <VettedIcon />,
+    title: "Work with vetted, ambitious mentees",
+    subtext:
+      "No random requests. Only people who are intentional about growth.",
+  },
+  {
+    icon: <SearchGlobe />,
+    title: "Share real-world experience",
+    subtext:
+      "Practical insight beats theory. Kanselo values what you’ve lived, not just what you’ve learned.",
+  },
+  {
+    icon: <ListIcon />,
+    title: "Flexible, structured engagement",
+    subtext:
+      "Mentor on your terms — from short advisory sessions to deeper guidance.",
+  },
+  {
+    icon: <BuildIcon />,
+    title: "Build authority and legacy",
+    subtext:
+      "Strengthen your professional brand while giving back meaningfully.",
+  },
+];
+
+export const mentorsAre = [
+  "Experienced founders and co-founders",
+  "Business owners and operators",
+  "Senior professionals and industry experts",
+  "Advisors, consultants, and strategists",
+];
+
+export const whatMakeKanseloDifferent = [
+  "Verified mentors only",
+  "Intentional matching",
+  "Real outcomes, not empty conversations",
+];
+
+export const whoBuildIsFor = [
+  "Celebrities & high-influence people who want businesses built and run professionally",
+  "HNIs and diaspora investors who want to own a solid local business without trial-and-error",
+  "Young founders who want to own an app or business but need the heavy lifting done correctly",
+];
+
+export const whatWeBuild = [
+  "Apps & tech platforms",
+  "Consumer brands (including fashion)",
+  "Service businesses",
+  "Digital products",
+  "Physical businesses",
+];
+
+export const whatBuilderGet = [
+  "A properly registered company (where applicable)",
+  "A product/service ready to launch or already launched",
+  "Business systems (finance, operations, customer flow)",
+  "Optional staffing and handover documentation",
+];
+
+export const builderEngagement = [
+  {
+    title: "Build & Hand Over",
+    subtext: "We build everything and hand it over to you. (No Kanselo stake)",
+  },
+  {
+    title: "Build, Run & Partner",
+    subtext:
+      "We build and help operate, and Kanselo can take a minority stake. (Lower upfront cost)",
+  },
+  {
+    title: "Build, Staff & Stabilise",
+    subtext:
+      "We build, hire key staff, run for an agreed period, then hand over stable operations.",
+  },
+  {
+    title: "Mentor with purpose",
+    subtext:
+      "Offer guidance that helps people make better decisions and move forward.",
   },
 ];

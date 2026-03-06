@@ -1,14 +1,23 @@
-import { BrandIcon } from "@/public/svgs/svgs";
+import { allImages } from "@/public/images/images";
+import Image from "next/image";
 import Link from "next/link";
 
-const BrandLogo = ({ className }: { className?: string }) => {
+const BrandLogo = ({
+  className,
+  footer,
+}: {
+  footer?: boolean;
+  className?: string;
+}) => {
   return (
     <Link
       href="/"
-      className={`${className} w-[94px]`}
-      aria-label="Brand logo take you home"
+      className={`${className} flex w-26 items-center justify-center gap-2`}
     >
-      <BrandIcon />
+      <Image
+        src={footer ? allImages.brandWhiteLogo : allImages.brandLogo}
+        alt="Kanselo Logo"
+      />
     </Link>
   );
 };

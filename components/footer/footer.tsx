@@ -5,11 +5,11 @@ import BrandLogo from "../ui/brandLogo";
 
 const Footer = () => {
   return (
-    <footer className="bg-grey-900 py-10 text-white">
-      <section className="container flex flex-wrap items-center justify-between gap-y-10 lg:flex-row">
-        <BrandLogo />
+    <footer className="bg-primary py-10 text-white">
+      <section className="container flex flex-col items-center justify-center gap-10">
+        <BrandLogo footer />
 
-        <ul className="flex flex-wrap gap-10">
+        <ul className="flex flex-wrap gap-20">
           {footerRoutes.map(({ name, path }) => (
             <li key={name}>
               <Link href={path} className=" ">
