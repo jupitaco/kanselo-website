@@ -38,8 +38,9 @@ const ResponsiveNavBar = ({
             })}
           </ul>
 
-          <div className="flex w-full items-center justify-start px-5 lg:w-fit lg:justify-end lg:px-0">
-            <Button className="pry-btn w-full">Download App</Button>
+          <div className="flex w-full items-center justify-start gap-3 px-5 lg:w-fit lg:justify-end lg:px-0">
+            <Button className="outline-btn bg-white!">Sign up</Button>
+            <Button className="pry-btn">Log In</Button>
           </div>
         </article>
       </section>

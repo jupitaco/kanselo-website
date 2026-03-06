@@ -2,8 +2,12 @@
 import Link from "next/link";
 import { footerRoutes } from "../routes";
 import BrandLogo from "../ui/brandLogo";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const path = usePathname();
+
+  if (path.includes("/build")) return;
   return (
     <footer className="bg-primary py-10 text-white">
       <section className="container flex flex-col items-center justify-center gap-10">

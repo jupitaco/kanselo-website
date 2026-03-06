@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 import BrandLogo from "../ui/brandLogo";
 import styles from "./navBar.module.css";
 import ResponsiveNavBar from "./responsiveNavBar";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const path = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,6 +22,7 @@ const Navbar = () => {
     };
   }, []);
 
+  if (path.includes("/build")) return;
   return (
     <header
       // className={`grid h-24 w-full place-items-center`}

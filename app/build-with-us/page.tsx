@@ -1,16 +1,9 @@
 import Button from "@/components/ui/button";
-import { FAQs } from "@/components/ui/faq";
-import { GetStarted } from "@/components/ui/getStarted";
 import {
   builderEngagement,
-  howMentoringWorks,
-  mentorsAre,
-  mentorsFaq,
   whatBuilderGet,
-  whatMakeKanseloDifferent,
   whatWeBuild,
   whoBuildIsFor,
-  whyMentorsOnKanselo,
 } from "@/constants";
 import { allImages } from "@/public/images/images";
 import { CheckedIcon } from "@/public/svgs/svgs";
@@ -18,7 +11,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Mentor",
+  title: "Build with us",
 };
 
 export default function page() {
@@ -36,7 +29,13 @@ export default function page() {
             and optional staffing. When we’re done, you either take over fully,
             or we can partner with you depending on what you prefer.
           </p>
-          <Button className="pry-btn w-full lg:w-fit">Get Started</Button>
+          <Button
+            link
+            href="/build-with-us/request"
+            className="pry-btn w-full lg:w-fit"
+          >
+            Get Started
+          </Button>
         </article>
         <figure className="flex w-full justify-end lg:w-[55%]">
           <Image src={allImages.buildHero} alt="" />
@@ -153,6 +152,13 @@ export default function page() {
               </li>
             ))}
           </ul>
+          <Button
+            link
+            href="/build-with-us/request"
+            className="pry-btn w-full lg:w-fit"
+          >
+            Get Started
+          </Button>
         </article>
       </section>
     </main>
