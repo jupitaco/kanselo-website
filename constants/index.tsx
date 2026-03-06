@@ -211,9 +211,4 @@ export const builderEngagement = [
     subtext:
       "We build, hire key staff, run for an agreed period, then hand over stable operations.",
   },
-  {
-    title: "Mentor with purpose",
-    subtext:
-      "Offer guidance that helps people make better decisions and move forward.",
-  },
 ];

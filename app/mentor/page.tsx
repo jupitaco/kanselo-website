@@ -23,10 +23,7 @@ export default function page() {
       <section className="to-secondary/40 from-secondary-25/60 flex min-h-screen flex-wrap justify-between space-y-5 overflow-hidden bg-linear-to-r from-20% to-90% pt-30">
         <article className="flex flex-1 flex-col justify-center gap-8 px-3 lg:px-10">
           <h1>Turn Your Experience Into Impact</h1>
-          <p>
-            Explore the features that make Geeft the perfect platform for
-            connecting, sharing and gifting
-          </p>
+          <p>Mentor the next generation of entrepreneurs and professionals.</p>
           <Button
             link
             href="https://kanselo-mentor.vercel.app"
