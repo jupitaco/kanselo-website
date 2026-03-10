@@ -10,7 +10,7 @@ export const navRoutes = [
   },
   {
     name: "FAQs",
-    path: "#faqs",
+    path: "/#faqs",
   },
   {
     name: "Mentor",

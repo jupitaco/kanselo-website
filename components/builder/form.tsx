@@ -1,8 +1,29 @@
 import FormInput from "../ui/formInput";
 import Button from "../ui/button";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { ImageFileUpload } from "../fileUpload/fileUpload";
+
+export type RequestFormData = {
+  fullName: string;
+  email: string;
+  phone: string;
+  city: string;
+  you: string;
+  whatToBuid: string;
+  industry: string;
+  explanation: string;
+  isBrandName: string;
+  timeline: string;
+  budget: string;
+  option: string;
+  equity: string;
+  consent: boolean;
+};
+
+type StepFormProps = {
+  values: RequestFormData;
+  onChange: (name: keyof RequestFormData, value: string | boolean) => void;
+};
 
 export const industriesData = [
   {
@@ -55,7 +76,7 @@ export const industriesData = [
   },
 ];
 
-export const ContactForm = () => {
+export const ContactForm = ({ values, onChange }: StepFormProps) => {
   const { push } = useRouter();
 
   return (
@@ -76,6 +97,8 @@ export const ContactForm = () => {
           name="fullName"
           type="text"
           label="Full Name"
+          value={values.fullName}
+          onChange={(e) => onChange("fullName", e.target.value)}
           required
         />
         <FormInput
@@ -83,15 +106,26 @@ export const ContactForm = () => {
           name="email"
           type="email"
           label="Email"
+          value={values.email}
+          onChange={(e) => onChange("email", e.target.value)}
           required
         />
         <FormInput
-          id="fullName"
-          name="fullName"
+          id="phone"
+          name="phone"
           label="Phone/Whatsapp"
+          value={values.phone}
+          onChange={(e) => onChange("phone", e.target.value)}
           required
         />
-        <FormInput id="city" name="city" label="Country/City" required />
+        <FormInput
+          id="city"
+          name="city"
+          label="Country/City"
+          value={values.city}
+          onChange={(e) => onChange("city", e.target.value)}
+          required
+        />
 
         <Button className="pry-btn w-full" type="submit">
           Continue
@@ -101,7 +135,7 @@ export const ContactForm = () => {
   );
 };
 
-export const AboutYouForm = () => {
+export const AboutYouForm = ({ values, onChange }: StepFormProps) => {
   const { push } = useRouter();
   return (
     <section className="mx-auto w-full max-w-lg space-y-4">
@@ -125,6 +159,8 @@ export const AboutYouForm = () => {
             { label: "Mentor", value: "mentor" },
             { label: "Mentee", value: "mentee" },
           ]}
+          value={values.you}
+          onSelectItem={(v) => onChange("you", v)}
           required
         />
 
@@ -136,23 +172,8 @@ export const AboutYouForm = () => {
   );
 };
 
-export const BusinessInfoForm = () => {
+export const BusinessInfoForm = ({ values, onChange }: StepFormProps) => {
   const { push } = useRouter();
-
-  const [formData, setFormData] = useState({
-    whatToBuid: "",
-    industry: "",
-    explanation: "",
-    isBrandName: "",
-    timeline: "",
-    budget: "",
-    option: "",
-    equity: "",
-  });
-
-  const handleSelect = (id: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [id]: value }));
-  };
 
   return (
     <section className="mx-auto w-full max-w-lg space-y-4">
@@ -172,6 +193,8 @@ export const BusinessInfoForm = () => {
           name="whatToBuid"
           type="textarea"
           label="What do you want to build?"
+          value={values.whatToBuid}
+          onChange={(e) => onChange("whatToBuid", e.target.value)}
           required
         />
 
@@ -181,8 +204,8 @@ export const BusinessInfoForm = () => {
           type="shadSelect"
           label="Industry"
           shadcnSelectData={industriesData}
-          value={formData?.industry}
-          onSelectItem={(v) => handleSelect("industry", v)}
+          value={values.industry}
+          onSelectItem={(v) => onChange("industry", v)}
           required
         />
         <FormInput
@@ -190,6 +213,8 @@ export const BusinessInfoForm = () => {
           name="explanation"
           type="textarea"
           label="Explain the idea in a few sentences"
+          value={values.explanation}
+          onChange={(e) => onChange("explanation", e.target.value)}
           required
         />
 
@@ -202,8 +227,8 @@ export const BusinessInfoForm = () => {
             { label: "Yes", value: "Yes" },
             { label: "No", value: "No" },
           ]}
-          value={formData?.isBrandName}
-          onSelectItem={(v) => handleSelect("isBrandName", v)}
+          value={values.isBrandName}
+          onSelectItem={(v) => onChange("isBrandName", v)}
           required
         />
 
@@ -218,8 +243,8 @@ export const BusinessInfoForm = () => {
             { label: "3 Week", value: "3week" },
             { label: "4 Week", value: "4week" },
           ]}
-          value={formData?.timeline}
-          onSelectItem={(v) => handleSelect("timeline", v)}
+          value={values.timeline}
+          onSelectItem={(v) => onChange("timeline", v)}
           required
         />
 
@@ -228,6 +253,8 @@ export const BusinessInfoForm = () => {
           name="budget"
           type="number"
           label="Budget amount range"
+          value={values.budget}
+          onChange={(e) => onChange("budget", e.target.value)}
           required
         />
 
@@ -240,8 +267,8 @@ export const BusinessInfoForm = () => {
             { label: "Option1", value: "option1" },
             { label: "Option2", value: "option2" },
           ]}
-          value={formData?.option}
-          onSelectItem={(v) => handleSelect("option", v)}
+          value={values.option}
+          onSelectItem={(v) => onChange("option", v)}
           required
         />
 
@@ -254,8 +281,8 @@ export const BusinessInfoForm = () => {
             { label: "Yes", value: "Yes" },
             { label: "No", value: "No" },
           ]}
-          value={formData?.equity}
-          onSelectItem={(v) => handleSelect("equity", v)}
+          value={values.equity}
+          onSelectItem={(v) => onChange("equity", v)}
           required
         />
 
@@ -267,7 +294,17 @@ export const BusinessInfoForm = () => {
   );
 };
 
-export const AttachmentsForm = () => {
+type AttachmentsFormProps = StepFormProps & {
+  onSubmit: () => Promise<boolean>;
+  submitting: boolean;
+};
+
+export const AttachmentsForm = ({
+  values,
+  onChange,
+  onSubmit,
+  submitting,
+}: AttachmentsFormProps) => {
   const { push } = useRouter();
 
   const loading = {};
@@ -278,9 +315,12 @@ export const AttachmentsForm = () => {
       </header>
 
       <form
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
-          push("/build-with-us/success");
+          const ok = await onSubmit();
+          if (ok) {
+            push("/build-with-us/success");
+          }
         }}
         className="space-y-6 px-5"
       >
@@ -304,6 +344,8 @@ export const AttachmentsForm = () => {
               name="consent"
               id="consent"
               className="size-5"
+              checked={values.consent}
+              onChange={(e) => onChange("consent", e.target.checked)}
               required
             />
           </div>
@@ -314,8 +356,8 @@ export const AttachmentsForm = () => {
           </label>
         </div>
 
-        <Button className="pry-btn w-full" type="submit">
-          Continue
+        <Button className="pry-btn w-full" type="submit" disabled={submitting}>
+          {submitting ? "Submitting..." : "Continue"}
         </Button>
       </form>
     </section>

@@ -22,7 +22,7 @@ const Navbar = () => {
     };
   }, []);
 
-  if (path.includes("/build")) return;
+  if (path.includes("/build-with-us/request")) return;
   return (
     <header
       // className={`grid h-24 w-full place-items-center`}
