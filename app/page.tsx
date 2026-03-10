@@ -224,6 +224,7 @@ export default function Home() {
       <GetStarted
         title="This isn’t motivation. It’s direction."
         subtitle="Kanselo helps ambitious people make smarter decisions, avoid costly mistakes, and move forward with confidence — guided by those who’ve already walked the path."
+        link="https://kanselo-mentee.vercel.app/signup"
       />
 
       <section className="container space-y-10 overflow-hidden py-16">
