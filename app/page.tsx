@@ -39,16 +39,12 @@ export default function Home() {
           >
             <Button
               link
-              href="https://kanselo-mentor.vercel.app"
+              href="https://mentor.kanselo.com"
               className="outline-btn bg-white!"
             >
               Apply as a Mentor
             </Button>
-            <Button
-              link
-              href="https://kanselo-mentee.vercel.app"
-              className="pry-btn"
-            >
+            <Button link href="https://mentee.kanselo.com" className="pry-btn">
               Sign Up Today
             </Button>
           </article>
@@ -224,7 +220,7 @@ export default function Home() {
       <GetStarted
         title="This isn’t motivation. It’s direction."
         subtitle="Kanselo helps ambitious people make smarter decisions, avoid costly mistakes, and move forward with confidence — guided by those who’ve already walked the path."
-        link="https://kanselo-mentee.vercel.app/signup"
+        link="https://mentee.kanselo.com/signup"
       />
 
       <section className="container space-y-10 overflow-hidden py-16">

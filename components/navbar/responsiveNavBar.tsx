@@ -41,14 +41,14 @@ const ResponsiveNavBar = ({
           <div className="flex w-full items-center justify-start gap-3 px-5 lg:w-fit lg:justify-end lg:px-0">
             <Button
               link
-              href="https://kanselo-mentee.vercel.app/signup"
+              href="https://mentee.kanselo.com/signup"
               className="outline-btn bg-white!"
             >
               Sign up
             </Button>
             <Button
               link
-              href="https://kanselo-mentee.vercel.app/signin"
+              href="https://mentee.kanselo.com/signin"
               className="pry-btn"
             >
               Log In

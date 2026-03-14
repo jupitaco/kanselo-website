@@ -26,7 +26,7 @@ export default function page() {
           <p>Mentor the next generation of entrepreneurs and professionals.</p>
           <Button
             link
-            href="https://kanselo-mentor.vercel.app"
+            href="https://mentor.kanselo.com"
             className="pry-btn w-full lg:w-fit"
           >
             Join as a Mentor
@@ -182,7 +182,7 @@ export default function page() {
         title="Experience deserves a platform"
         subtitle="Kanselo exists to honour experience by turning it into guidance — helping ambitious people avoid mistakes, grow faster, and build smarter."
         ctaTitle="Join as a Mentor"
-        link="https://kanselo-mentor.vercel.app"
+        link="https://mentor.kanselo.com"
         className="bg-grey-5!"
       />
 
